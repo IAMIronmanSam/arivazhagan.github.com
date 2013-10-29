@@ -1,0 +1,101 @@
+
+
+.pagecontent {
+    padding: 24px;
+}
+
+
+.circle {
+  display: block;
+  width: 150px;
+  height: 150px;
+  margin: 0px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-border-radius: 99em;
+  -moz-border-radius: 99em;
+  border-radius: 99em;
+  border: 5px solid #eee;
+  box-shadow: 0 3px 2px rgba(0, 0, 0, 0.3);  
+  float:right;
+}
+
+
+.twitter{
+    /* IE10 Consumer Preview */ 
+background-image: -ms-radial-gradient(center, circle farthest-corner, #EFEFEF 0%, #00A3EF 100%);
+
+/* Mozilla Firefox */ 
+background-image: -moz-radial-gradient(center, circle farthest-corner, #EFEFEF 0%, #00A3EF 100%);
+
+/* Opera */ 
+background-image: -o-radial-gradient(center, circle farthest-corner, #EFEFEF 0%, #00A3EF 100%);
+
+/* Webkit (Safari/Chrome 10) */ 
+background-image: -webkit-gradient(radial, center center, 0, center center, 506, color-stop(0, #EFEFEF), color-stop(1, #00A3EF));
+
+/* Webkit (Chrome 11+) */ 
+background-image: -webkit-radial-gradient(center, circle farthest-corner, #EFEFEF 0%, #00A3EF 100%);
+
+/* W3C Markup, IE10 Release Preview */ 
+background-image: radial-gradient(circle farthest-corner at center, #EFEFEF 0%, #00A3EF 100%);
+}
+.gplus{
+/* IE10 Consumer Preview */ 
+background-image: -ms-radial-gradient(center, circle farthest-corner, #DFB9B9 0%, #DF5138 100%);
+
+/* Mozilla Firefox */ 
+background-image: -moz-radial-gradient(center, circle farthest-corner, #DFB9B9 0%, #DF5138 100%);
+
+/* Opera */ 
+background-image: -o-radial-gradient(center, circle farthest-corner, #DFB9B9 0%, #DF5138 100%);
+
+/* Webkit (Safari/Chrome 10) */ 
+background-image: -webkit-gradient(radial, center center, 0, center center, 506, color-stop(0, #DFB9B9), color-stop(1, #DF5138));
+
+/* Webkit (Chrome 11+) */ 
+background-image: -webkit-radial-gradient(center, circle farthest-corner, #DFB9B9 0%, #DF5138 100%);
+
+/* W3C Markup, IE10 Release Preview */ 
+background-image: radial-gradient(circle farthest-corner at center, #DFB9B9 0%, #DF5138 100%);
+}
+
+.github{
+   /* IE10 Consumer Preview */ 
+background-image: -ms-radial-gradient(center, circle farthest-corner, #9C9C9C 0%, #262626 100%);
+
+/* Mozilla Firefox */ 
+background-image: -moz-radial-gradient(center, circle farthest-corner, #9C9C9C 0%, #262626 100%);
+
+/* Opera */ 
+background-image: -o-radial-gradient(center, circle farthest-corner, #9C9C9C 0%, #262626 100%);
+
+/* Webkit (Safari/Chrome 10) */ 
+background-image: -webkit-gradient(radial, center center, 0, center center, 506, color-stop(0, #9C9C9C), color-stop(1, #262626));
+
+/* Webkit (Chrome 11+) */ 
+background-image: -webkit-radial-gradient(center, circle farthest-corner, #9C9C9C 0%, #262626 100%);
+
+/* W3C Markup, IE10 Release Preview */ 
+background-image: radial-gradient(circle farthest-corner at center, #9C9C9C 0%, #262626 100%);
+    }
+.tumblr{
+/* IE10 Consumer Preview */ 
+background-image: -ms-radial-gradient(center, circle farthest-side, #6CA6DE 0%, #385673 100%);
+
+/* Mozilla Firefox */ 
+background-image: -moz-radial-gradient(center, circle farthest-side, #6CA6DE 0%, #385673 100%);
+
+/* Opera */ 
+background-image: -o-radial-gradient(center, circle farthest-side, #6CA6DE 0%, #385673 100%);
+
+/* Webkit (Safari/Chrome 10) */ 
+background-image: -webkit-gradient(radial, center center, 0, center center, 487, color-stop(0, #6CA6DE), color-stop(1, #385673));
+
+/* Webkit (Chrome 11+) */ 
+background-image: -webkit-radial-gradient(center, circle farthest-side, #6CA6DE 0%, #385673 100%);
+
+/* W3C Markup, IE10 Release Preview */ 
+background-image: radial-gradient(circle farthest-side at center, #6CA6DE 0%, #385673 100%);
+    }

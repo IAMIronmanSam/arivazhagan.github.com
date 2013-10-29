@@ -1,6 +1,0 @@
-# Jekyll
-permalink: /:year/:title/
-paginate: 10 
-exclude: 
-name: arivazhagan.github.com
-baseurl: /arivazhagan.github.com

@@ -1,28 +1,183 @@
----
-layout: nil
-is_index: true
----
+<!DOCTYPE html>
+<html>
+<head> 
+<link href='http://fonts.googleapis.com/css?family=Share+Tech' rel='stylesheet' type='text/css'>
+    <title>Arivazhagan</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Standard Coder Includes -->
+    <script>
+        var appname = "{{app_name}}"; //app name (id) of this app
+        var appurl = "{{&app_url}}";
+        var staticurl = "{{&static_url}}"; //base path to your static files /static/apps/yourapp
+    </script>
+    <link href="static/media/bootstrap.min.css" media="screen" rel="stylesheet" type="text/css"/>
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.1/css/font-awesome.css" media="screen" rel="stylesheet" type="text/css"/> 
+    <link href="static/css/index.css" media="screen" rel="stylesheet" type="text/css"/> 
+    <script src="static/media/bootstrap.min.js"></script>
+    <script src="static/common/ace-min/ace.js" type="text/javascript" charset="utf-8"></script>
+    <script src="static/js/index.js"></script>
+    <script>
+        Coder.addBasicNav();
+    </script>
+    <!-- End Coder Includes -->
 
-
-{% include header.html %}
-    {% for post in paginator.posts %}
-      {% include post.html %}
-    {% endfor %}
-	
-	<div class="pagination" id="bottom_page">
-		<ul>
-			{% if paginator.previous_page %}
-				{% if paginator.previous_page == 1 %}
-				<li class="previous"><a href="{{ linkhome }}">&larr; Previous</a></li>
-				{% else %}
-				<li class="previous"><a href="{{ site.baseurl }}/page{{ paginator.previous_page }}">&larr; Previous</a></li>
-				{% endif %}
-			{% endif %}
-				<li><p>Page {{ paginator.page }} of {{ paginator.total_pages }}</p></li>
-			{% if paginator.next_page %}
-				<li class="next"><a href="{{ site.baseurl }}/page{{ paginator.next_page }}">Next &rarr;</a></li>
-			{% endif %}
-		</ul>
-	</div>
-
-{% include footer.html %}
+    <!-- This app's includes -->
+    <link href="{{&static_url}}/css/index.css" media="screen" rel="stylesheet" type="text/css"/>
+    <script src="{{&static_url}}/js/index.js"></script>
+    <!-- End apps includes -->
+</head>
+<body>
+<!-- Navigation Bar -->
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <a href="#" class="navbar-brand">Arivazhagan</a>
+            <button class = "navbar-toggle" data-toggle = "collapse" data-target = ".navHeaderCollapse">
+                <span class = "icon-bar"></span>
+                <span class = "icon-bar"></span>
+                <span class = "icon-bar"></span>
+            </button>
+            <div class = "collapse navbar-collapse navHeaderCollapse">
+                <ul class = "nav navbar-nav navbar-right">
+                <li class = "active"><a href = "#">Home</a></li>
+                <li ><a href = "#">About Me</a></li>
+                <li ><a href = "#">Blog</a></li>
+                <li class = "dropdown">                          
+                    <a href = "#" class = "dropdown-toggle" data-toggle = "dropdown">Social Media <b class = "caret"></b></a>
+                    <ul class = "dropdown-menu">
+                        <li><a href = "#">Twitter</a></li>
+                        <li><a href = "#">Facebook</a></li>
+                        <li><a href = "#">Google+</a></li>
+                        <li><a href = "#">Instagram</a></li>
+                    </ul>
+                </li>
+                <li ><a href = "#contact" data-toggle="modal">Contact</a></li>
+            </div>
+        </div>
+    </div>
+<!-- Navigation Bar -->
+<!-- Banner -->
+    <div class="container">
+        <div class="jumbotron">
+        <center>
+        <h1>
+   <div class = "circle" style="background-image: 
+       url('static/media/Selfie.jpeg')">                    
+            </div>
+<br>Arivazhagan Ambigapathi</h1>
+        <p> <h4> #import brain.*; void Internet()</h4></p>
+        <!--<button class="btn btn-default">Welcome</button>
+        <button class="btn btn-info">Tweet it!</button> -->
+        </center>
+        </div>
+    </div>
+<!-- Banner -->    
+<!-- Fluid Grid -->
+    <div class="container expertise">
+         <div class = "row">
+            <div class = "col-md-6">
+                    <span class="fa-stack fa-lg">
+                        <i class="fa fa-square fa-stack-2x"></i>
+                        <i class="fa fa-terminal fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <ul>
+                        <li>Markup : HTML5,CSS3</li>
+                        <li>Script: Javascript,Coffee Script</li>
+                        <li>Technology: Sharepoint,Java</li>
+                        <li>Tools: Fiddler,Visual Studio 2013,Netbeans,Eclipse</li>
+                    </ul>
+            </div>
+            <div class = "col-md-3">    
+                
+            </div>
+        </div>
+  </div>
+<!-- Fluid Grid -->
+<!-- Fluid Grid -->
+    <div class="container">
+         <div class = "row">
+            <div class = "col-md-6">
+                    <span class="fa-stack fa-lg">
+                       <i class="fa fa-bullhorn fa-stack-2x"></i>
+                    </span>
+                    <br>
+                    <ul>
+                        <li>Watch Tech meetings</li>
+                        <li>Always learning Javascript,Coffee Script</li>
+                        <li>My roots from JAVA</li>
+                        <li>Ubuntu Lover</li>
+                    </ul>
+            </div>
+            <div class = "col-md-3">
+                    <ul>
+                        <li>Intrested in HTML5,CSS3</li>
+                        <li>Hardcore bug creator</li>
+                        <li>Fond of live shows</li>
+                        <li>Read only dan brown books</li>
+                        <li>Watch lot of Movies!!</li>
+                    </ul>
+            </div>
+        </div>
+  </div>
+  
+  <!-- Fluid Grid -->
+    <div class="container">
+         <div class = "row">
+            <div class = "col-md-3 twitter">
+                   <center> <i class="fa fa-twitter fa-5x"></i><br>
+                    <a href="https://twitter.com/arivu86" class="twitter-follow-button" data-show-count="false" data-size="large" data-dnt="true">Follow @arivu86</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></center>
+            </div>
+            <div class = "col-md-3 gplus">
+                <center>    <i class="fa fa-google-plus-square fa-5x"></i><br>
+                    <!-- Place this tag where you want the widget to render. -->
+<div class="g-follow" data-annotation="none" data-height="24" data-href="//plus.google.com/106865885479792324329" data-rel="author"></div>
+<!-- Place this tag after the last widget tag. -->
+<script type="text/javascript">
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script></center>
+            </div>
+            <div class = "col-md-3 github">
+                <center><i class="fa fa-github-square fa-5x"></i><br>
+                <a href = "https://github.com/arivazhagan" class = "btn btn-success">My Code</a>
+                </center>
+            </div>
+            <div class = "col-md-3 tumblr">
+         <center>       <i class="fa fa-tumblr fa-5x"></i><br>
+                <a href="http://arivu.tumblr.com/" class="btn btn-primary">My Blog</a></center>
+            </div>
+        </div>
+  </div>
+  <div></div>
+<!-- Footer -->
+  <div class="navbar navbar-inverse navbar-bottom-fixed">
+        <div class="container">
+            <p class="navbar-text pull-left"> Site Powered by Bootstrap 3</p>
+            <a href="#" class="navbar-btn btn btn-primary pull-right">Bootstrap 3</a>
+        </div>
+  </div>
+<!-- Footer -->
+<!-- Modal Dialog -->
+    <div class="modal fade" id="contact" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+            <div class="modal-header">
+                Contact Me
+            </div>
+            <div class="modal-body">
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+            </div>
+            <div class="modal-footer">
+                <a class="btn btn-primary" data-dismiss="modal">Send</a>
+                <a class="btn btn-default" data-dismiss="modal">Close</a>
+            </div>
+            </div>
+        </div>
+    </div>
+<!-- Modal Dialog -->
+</body>
+</html>
