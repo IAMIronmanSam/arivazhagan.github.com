@@ -7,8 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link href="static/media/bootstrap.min.css" media="screen" rel="stylesheet" type="text/css"/>
+    <link href="static/css/jquery.fullPage.css" media="screen" rel="stylesheet" type="text/css"/>
     <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.1/css/font-awesome.css" media="screen" rel="stylesheet" type="text/css"/> 
-    <link href="static/css/index.css" media="screen" rel="stylesheet" type="text/css"/> 
+    <script src="static/js/jquery-1.10.2.min.js"></script>
+    <script src="static/js/jquery-ui.min.js"></script>
+    <script src="static/js/jquery.fullPage.min.js"></script>
     <script src="static/media/bootstrap.min.js"></script>
     <script src="static/js/index.js"></script>
 
@@ -20,29 +23,27 @@
 </head>
 <body>
 <!-- Navigation Bar -->
-    <div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar navbar-inverse navbar-fixed-top" id="top_nav">
         <div class="container">
             <a href="#" class="navbar-brand">Arivazhagan</a>
-            <button class = "navbar-toggle" data-toggle = "collapse" data-target = ".navHeaderCollapse">
-                <span class = "icon-bar"></span>
-                <span class = "icon-bar"></span>
-                <span class = "icon-bar"></span>
-            </button>
+
             <div class = "collapse navbar-collapse navHeaderCollapse">
                 <ul class = "nav navbar-nav navbar-right">
-                <li class = "active"><a href = "#">Home</a></li>
-                <li ><a href = "#contact" data-toggle="modal">Contact</a></li>
+                <li data-menuanchor="firstPage" ><a href = "#firstPage">Home</a></li>
+                <li data-menuanchor="secondPage" ><a href = "#secondPage">Expertise</a></li>
+                <li data-menuanchor="3rdPage" ><a href = "#3rdPage">My Stuff</a></li>
+                <li data-menuanchor="4thpage" ><a href = "#4thpage" >Contact</a></li>
+                </ul>
             </div>
         </div>
     </div>
 <!-- Navigation Bar -->
 <!-- Banner -->
-    <div class="container">
+    <div class="section" id="section0">
         <div class="jumbotron">
         <center>
         <h1>
-   <div class = "circle" style="background-image: 
-       url('static/media/Selfie.jpg')">                    
+   <div class = "circle" style="background-image:url('static/media/Selfie.jpg')">                    
             </div>
 <br>Arivazhagan Ambigapathi</h1>
         <p> <h4> #import brain.*; void Internet()</h4></p>
@@ -53,7 +54,7 @@
     </div>
 <!-- Banner -->    
 <!-- Fluid Grid -->
-    <div class="container expertise">
+    <div class="expertise section" id="section1">
          <div class = "row">
             <div class = "col-md-6">
                     <span class="fa-stack fa-lg">
@@ -74,7 +75,7 @@
   </div>
 <!-- Fluid Grid -->
 <!-- Fluid Grid -->
-    <div class="container">
+    <div class="section" id="section2">
          <div class = "row">
             <div class = "col-md-6">
                     <span class="fa-stack fa-lg">
@@ -101,31 +102,15 @@
   </div>
   
   <!-- Fluid Grid -->
-    <div class="container-bottom">
+    <div class="section" id="section3">
          <div class = "row">
-            
-        </div>
-  </div>
-  <div></div>
-<!-- Footer -->
-  <div class="navbar navbar-inverse navbar-fixed-bottom">
-			<div class = "col-md-3 twitter">
+            <div class = "col-md-3 twitter">
                    <center> <i class="fa fa-twitter fa-5x"></i><br>
-                    <a href="https://twitter.com/arivu86" class="twitter-follow-button" data-show-count="false" data-size="large" data-dnt="true">Follow @arivu86</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></center>
+                    </center>
             </div>
             <div class = "col-md-3 gplus">
                 <center>    <i class="fa fa-google-plus-square fa-5x"></i><br>
-                    <!-- Place this tag where you want the widget to render. -->
-<div class="g-follow" data-annotation="none" data-height="24" data-href="//plus.google.com/106865885479792324329" data-rel="author" style="bottom:0px;"></div>
-<!-- Place this tag after the last widget tag. -->
-<script type="text/javascript">
-  (function() {
-    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
-    po.src = 'https://apis.google.com/js/plusone.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
-  })();
-</script></center>
+                    </center>
             </div>
             <div class = "col-md-3 github">
                 <center><i class="fa fa-github-square fa-5x"></i><br>
@@ -136,9 +121,22 @@
          <center>       <i class="fa fa-tumblr fa-5x"></i><br>
                 <a href="http://arivu.tumblr.com/" class="btn btn-primary">My Blog</a></center>
             </div>
+        </div>
+  </div>
+        </div>
+
+  <div></div>
+
+<!-- Footer -->
+  <div class="navbar navbar-inverse navbar-fixed-bottom">
+        <div class="container">
+            <p class="navbar-text pull-left"> Site Powered by Bootstrap 3 & Google Coder</p>
+            <a href="http://getbootstrap.com/" target="_blank" class="navbar-btn btn btn-primary pull-right">Bootstrap 3</a>
+            <a href=="http://googlecreativelab.github.io/coder/" target="_blank" class="navbar-btn btn btn-info pull-right">Google Coder</a>
+        </div>
   </div>
 <!-- Footer -->
-<!-- Modal Dialog -->
+<!-- Modal Dialog 
     <div class="modal fade" id="contact" role="dialog">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -155,6 +153,6 @@
             </div>
         </div>
     </div>
-<!-- Modal Dialog -->
+Modal Dialog -->
 </body>
 </html>
