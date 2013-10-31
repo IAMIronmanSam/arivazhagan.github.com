@@ -8,7 +8,9 @@ body{
     padding: 24px;
 }
 
-
+.section{
+  text-align: center;
+}
 .circle {
   display: block;
   width: 150px;
