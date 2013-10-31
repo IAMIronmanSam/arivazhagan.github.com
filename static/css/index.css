@@ -1,21 +1,13 @@
 
-body{
-
- 
-}
-
 .pagecontent {
     padding: 24px;
 }
-ul li{
-  list-style: none;
-}
+
 .col-md-6,.col-md-3
 {
   left: 25%;
 }
 .section{
-  text-align: center;
    font-size: 35px;
 }
 .circle {
