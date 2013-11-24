@@ -17,6 +17,9 @@ background-image: linear-gradient(to bottom, #C9C5C3 0%, #FFFFFF 98%);
 .mystuff{
   text-align: left;
 }
+.alertcontainer{
+  width:70%;
+}
 .circle {
   display: block;
   width: 150px;
